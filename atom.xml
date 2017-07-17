@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>杨吉</title>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2017-07-17T05:22:41.000Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>YangJi</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>postName</title>
+    <link href="http://yoursite.com/2017/07/17/postName/"/>
+    <id>http://yoursite.com/2017/07/17/postName/</id>
+    <published>2017-07-17T05:22:41.000Z</published>
+    <updated>2017-07-17T05:22:41.000Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello</title>
+    <link href="http://yoursite.com/2017/07/14/hello/"/>
+    <id>http://yoursite.com/2017/07/14/hello/</id>
+    <published>2017-07-14T10:41:11.000Z</published>
+    <updated>2017-07-17T05:20:22.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>categories:</p>
+<ul>
+<li>Diary<br>tags:</li>
+<li>PS3</li>
+<li>Games<h2 id="Mars"><a href="#Mars" class="headerlink" title="Mars"></a>Mars</h2><h3 id="AdtSdk接口"><a href="#AdtSdk接口" class="headerlink" title="AdtSdk接口"></a>AdtSdk接口</h3>  Config{<pre><code>public String[] ip;//服务器IP
+public int[] port;//服务器端口 
+</code></pre>  }<br>  ConnectListener{<pre><code>void onConnected();//连接成功
+void onFailure();//连接失败
+void onDisconnect();//断开连接
+void onReConnected(); //重新连接
+</code></pre>  }<br>  //配置端口<br>  public static AdtSdk init(Config config);<br>  //配置连接状态<br>  public static AdtSdk serConnectListener(ConnectListener listener)<br>  //配置当前App所需要的cmdId<br>  public static AdtSdk setComId(int[] comIds)<br>  //启动<br>  public static AdtSdk start();<br>  //发送消息<br>  public static AdtSdk send(Task task)<br>  接收消息<br>  注册广播包名+mars_$cmdid<br>  例如包名是：com.guoxin.td<br>  mars push的cmdId：1001<br>  广播的action：com.guoxin.td.mars_1001</li>
+</ul>
+<hr>
+<h3 id="消息-Push"><a href="#消息-Push" class="headerlink" title="消息 Push"></a>消息 Push</h3><h3 id="快讯"><a href="#快讯" class="headerlink" title="快讯"></a>快讯</h3><h3 id="行情"><a href="#行情" class="headerlink" title="行情"></a>行情</h3><h3 id="交易下单"><a href="#交易下单" class="headerlink" title="交易下单"></a>交易下单</h3><h3 id="IM客服"><a href="#IM客服" class="headerlink" title="IM客服"></a>IM客服</h3><h3 id="服务代理"><a href="#服务代理" class="headerlink" title="服务代理"></a>服务代理</h3><blockquote>
+<p>服务启动<br>消息队列 ->分发消息</p>
+</blockquote>
+<h3 id="Service和AIDL实现类"><a href="#Service和AIDL实现类" class="headerlink" title="Service和AIDL实现类"></a>Service和AIDL实现类</h3><blockquote>
+<p>统一分接受数据<br>所有mars接口实现<br>发送数据<br>dns、port</p>
+</blockquote>
+<h3 id="TASK-推送给服务器的接口"><a href="#TASK-推送给服务器的接口" class="headerlink" title="TASK 推送给服务器的接口"></a>TASK 推送给服务器的接口</h3>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;categories:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Diary&lt;br&gt;tags:&lt;/li&gt;
+&lt;li&gt;PS3&lt;/li&gt;
+&lt;li&gt;Games&lt;h2 id=&quot;Mars&quot;&gt;&lt;a href=&quot;#Mars&quot; class=&quot;headerlink&quot; title=&quot;Mars&quot;&gt;&lt;/a&gt;Mars
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World121</title>
+    <link href="http://yoursite.com/2017/07/14/hello-world2/"/>
+    <id>http://yoursite.com/2017/07/14/hello-world2/</id>
+    <published>2017-07-14T09:31:35.000Z</published>
+    <updated>2017-07-14T10:39:49.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2017/07/14/hello-world/"/>
+    <id>http://yoursite.com/2017/07/14/hello-world/</id>
+    <published>2017-07-14T09:31:35.000Z</published>
+    <updated>2017-07-14T09:31:35.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
