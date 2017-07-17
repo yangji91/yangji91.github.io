@@ -11,13 +11,13 @@
     <content type="text"><![CDATA[categories: Diarytags: PS3 GamesMarsAdtSdk接口 Config{public String[] ip;//服务器IP public int[] port;//服务器端口 } ConnectListener{void onConnected();//连接成功 void onFailure();//连接失败 void onDisconnect();//断开连接 void onReConnected(); //重新连接 } //配置端口 public static AdtSdk init(Config config); //配置连接状态 public static AdtSdk serConnectListener(ConnectListener listener) //配置当前App所需要的cmdId public static AdtSdk setComId(int[] comIds) //启动 public static AdtSdk start(); //发送消息 public static AdtSdk send(Task task) 接收消息 注册广播包名+mars_$cmdid 例如包名是：com.guoxin.td mars push的cmdId：1001 广播的action：com.guoxin.td.mars_1001 消息 Push快讯行情交易下单IM客服服务代理 服务启动消息队列 ->分发消息 Service和AIDL实现类 统一分接受数据所有mars接口实现发送数据dns、port TASK 推送给服务器的接口]]></content>
   </entry>
   <entry>
-    <title><![CDATA[Hello World121]]></title>
-    <url>%2F2017%2F07%2F14%2Fhello-world2%2F</url>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2F2017%2F07%2F14%2Fhello-world%2F</url>
     <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
   </entry>
   <entry>
-    <title><![CDATA[Hello World]]></title>
-    <url>%2F2017%2F07%2F14%2Fhello-world%2F</url>
+    <title><![CDATA[Hello World121]]></title>
+    <url>%2F2017%2F07%2F14%2Fhello-world2%2F</url>
     <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
   </entry>
 </search>
